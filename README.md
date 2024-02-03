@@ -29,6 +29,7 @@ Compile the project using Rust's package manager, Cargo:
 ```bash
 cargo build --release
 ```
+
 ### How to Run
 Run the compiled executable with the desired command-line arguments:
 

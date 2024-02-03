@@ -1,12 +1,11 @@
 
 /*
+Valid input in command line look like : 
 
-valid input in command line look like : 
 
 ip_sniffer -h   // for help 
 ip_sniffer -j 100 192.168.1.1       // set how many threads user wants
 ip_sniffer 192.168ji.1.1  // default number of threads
-
 
 */
 
