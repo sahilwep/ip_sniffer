@@ -69,7 +69,9 @@ impl Arguments {
     }
 }
 
+// Scan function : 
 fn scan(tx: Sender<u16>, start_port: u16, addr: IpAddr, num_threads: u16){
+    // variable to store port, & increment by 1
     let mut port: u16 = start_port + 1;
 
     loop {
@@ -91,6 +93,7 @@ fn scan(tx: Sender<u16>, start_port: u16, addr: IpAddr, num_threads: u16){
 
 
 fn main() {
+    // using vector to store all the arguments
     let args: Vec<String> = env::args().collect();
     let program =  args[0].clone();
     let arguments = Arguments::new(&args).unwrap_or_else(
